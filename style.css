@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e3a46;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* جميع الصفحات */
+.page {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: none;
+}
+
+.page:not(.hidden) {
+    display: block;
+}
+
+/* الأزرار */
+.main-btn, .back-btn, .sebha-btn, .reset-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* صورة الأذكار */
+.azkar-image {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* التايمر */
+#timer {
+    font-size: 24px;
+    color: #ff8800;
+    font-weight: bold;
+}
+
+/* شبكة ختم القرآن */
+.quran-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.quran-part {
+    padding: 15px;
+    background-color: #ff8800;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.quran-part.completed {
+    background-color: #28a745;
+}
+
+/* عداد السبحة */
+#sebha-count {
+    font-size: 30px;
+    margin: 20px 0;
+}

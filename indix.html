@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>اللهم اغفر وارحم</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> <!-- الصفحة الرئيسية --> 
+  <div id="home-page" class="page"> 
+   <h1>🌙 اللهم اغفر وارحم</h1> <button class="main-btn" id="azkar-btn">📖 أذكار الصباح والمساء</button> <button class="main-btn" id="quran-btn">📜 ختم القرآن</button> <button class="main-btn" id="sebha-btn">🔢 السبحة الإلكترونية</button> 
+  </div> <!-- صفحة أذكار الصباح والمساء --> 
+  <div id="azkar-page" class="page hidden"> 
+   <h2>📖 أذكار الصباح والمساء</h2> 
+   <img id="azkar-image" src="https://i.postimg.cc/WbVGc8JD/images-1-29.jpg" alt="أذكار الصباح والمساء" class="azkar-image"> 
+   <p id="timer">⏳ 00:00</p> <button class="back-btn" id="azkar-back">🔙 رجوع</button> 
+  </div> <!-- صفحة ختم القرآن --> 
+  <div id="quran-page" class="page hidden"> 
+   <h2>📜 ختم القرآن</h2> 
+   <div class="quran-grid" id="quranGrid"></div> <button class="back-btn" id="quran-back">🔙 رجوع</button> 
+  </div> <!-- صفحة السبحة الإلكترونية --> 
+  <div id="sebha-page" class="page hidden"> 
+   <h2>🔢 السبحة الإلكترونية</h2> 
+   <p id="sebha-count">0</p> <button class="sebha-btn" id="sebha-increase">➕</button> <button class="reset-btn" id="sebha-reset">🔄 تصفير</button> <button class="back-btn" id="sebha-back">🔙 رجوع</button> 
+  </div> 
+  <script src="script.js"></script> 
+ </body>
+</html>
